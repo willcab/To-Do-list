@@ -17,10 +17,10 @@ const Body = styled.p`
 	width: 100%;
 `;
 
-const Ticket = (ticket) => {
+const Ticket = ({ticket}) => (
     <TicketWrapper>
         <Title>{ticket.title}</Title>
         <Body>{ticket.body}</Body>
     </TicketWrapper>
-};
+);
 export default Ticket;
